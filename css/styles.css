@@ -1,0 +1,558 @@
+body{
+
+	background-color: #606068;
+}
+
+.cover{
+	margin: 0px;
+	background-color: #606068;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+	margin: 0 auto;
+	padding-top: 40px;
+	width: 100%;
+	background-color: #eee;
+	max-width: 960px;
+	font-family: Helvetica, Arial;
+}
+
+.contentitem{
+	order: 1;
+	overflow: auto; /*magic: stopped the overflowing of the containeritem over the container*/
+	flex: 0 1 100%;
+	width:100%;
+    margin: 0;
+	padding: 0 30px 30px 30px;
+}
+#top{
+    margin:0;
+    background-color: #d9dee4
+}
+
+#research-content{
+	background-color: #d9dee4; /*Frost*/
+    /*margin-top: 50px;*/
+}
+
+#game-dev-content{
+	background-color: #c5d6e0;
+}
+
+#art-content{
+	background-color: #d9dee4;
+}
+
+#about-content{
+	background-color: #adbaca;
+}
+
+#propic{
+	max-width: 500px;
+}
+
+.img-container img{
+	margin: 0 auto;
+	min-width: 100px;
+}
+
+img.displayed{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 750px;
+	width: 100%;
+}
+
+h1{
+	margin: 0 20px;
+	font-size: 100%;
+	color: #000;
+}
+h2{
+    margin: 0;
+}
+
+header{
+    /*background-image: url("../images/illustration-graphic-design/laputian-robot.png");*/
+    /*background-size: 100%;*/
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.memory-fuel{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 75px;
+    color: #eee;
+    margin: 10px auto;
+    text-align: center;
+}
+
+section{
+	margin:0px;
+}
+.section-header{
+	font-size: 20pt;
+	text-align: center;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+    margin-top: 10px;
+	border-bottom: solid;
+	border-color: #606068;
+	border-width: 1px;
+}
+
+h3{
+	font-size: 16pt;
+	margin-bottom: 5px;
+	margin-top: 0px;
+
+}
+
+p{
+	line-height: 160%;
+	margin-top: 0px;
+
+}
+
+.p-no-margin-bottom{
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+section{
+	order: 1;
+	display: flex;
+	flex-flow: row wrap;
+	width:100%;
+}
+
+img{
+	max-width: 100%;
+	width:auto;
+	/*ok making height 100% messes up the stretching.*/
+	height: auto;
+}
+
+footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	order: 2;
+	background-color: #606068;
+	/*background-color: rgba(190, 190, 190, 0.5);*/
+	width: 100%;
+	padding: 15px;
+}
+
+
+
+/*------------Navigation------------*/
+
+/*new nav*/
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body{
+	margin:0;
+	padding:0;
+}
+
+html{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+.bar{ /*nav*/
+	z-index: 10;
+	opacity: 1;
+	transition: opacity .25s;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background: #eee;
+	padding: 0px 0px;
+	height: 40px;
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -35px;
+    visibility: hidden;
+}
+
+.nav-item{
+	text-align: center;
+	padding: 0px 20px;
+}
+
+/*a.nav-a{*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*top: -250px;*/
+    /*visibility: hidden;*/
+/*}*/
+
+.menu{
+	display: none;
+}
+
+/*.menu.responsive .nav-item{*/
+	/*!*display: block;*!*/
+	/*position: fixed;*/
+	/*display: flex;*/
+/*}*/
+
+.bar .responsive{
+	background-color: cyan;
+	height:100%;
+	flex-wrap: wrap;
+}
+
+.bar .nav-item .responsive{
+	/*position: fixed;*/
+	overflow: visible;
+	display:block;
+	color: blue;
+	height: 50px;
+	/*flex: 0 1 100%;*/
+	/*width:100%;*/
+	background-color: #eee;
+	/*align-content: center;*/
+	border-style: solid;
+}
+
+/******mobile nav overlay******/
+
+#hamburger{
+	display: none;
+	z-index: 21;
+	position: fixed;
+	top: 0px;
+	left: 10px;
+	font-size: 30px;
+	cursor: pointer;
+	color: #adbaca;
+}
+
+#mobile-nav{
+	top: 0;
+	opacity: 0;
+	/*visibility: hidden;*/
+	transition: opacity .25s;
+	z-index: -2000;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	/*background-color: rgba(0,0,0, 0.9);*/
+	overflow-y: hidden;
+	/*for fade... from https://jsfiddle.net/v8201h5q/3/*/
+	/*orig from http://stackoverflow.com/questions/30064932/hide-element-after-fade-out-using-only-css*/
+	-moz-animation-name: fadeIn;
+	-webkit-animation-name: fadeIn;
+	-ms-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-moz-animation-duration: .25s;
+	-webkit-animation-duration: .25s;
+	-ms-animation-duration: .25s;
+	animation-duration: .25s;
+	/*commented this out bc it causes topnav to vibrate slightly...*/
+	/*-moz-animation-timing-function: ease-in-out;*/
+	/*-webkit-animation-timing-function: ease-in-out;*/
+	/*-ms-animation-timing-function: ease-in-out;*/
+	/*animation-timing-function: ease-in-out;*/
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	/*transition: 0.5s;*/
+}
+.overlay.fadeOut {
+	-moz-animation-name: fadeOut;
+	-webkit-animation-name: fadeOut;
+	-ms-animation-name: fadeOut;
+	animation-name: fadeOut;
+}
+
+@-moz-keyframes fadeIn { 0% { opacity: 0; visibility: hidden; } 100% { opacity: 0.9; visibility: visible; }}
+@-webkit-keyframes fadeIn { 0% { opacity: 0; visibility: hidden; } 100% { opacity: 0.9; visibility: visible; }}
+@-ms-keyframes fadeIn { 0% { opacity: 0; visibility: hidden; } 100% { opacity: 0.9; visibility: visible; }}
+@keyframes fadeIn { 0% { opacity: 0; visibility: hidden; } 100% { opacity: 0.9; visibility: visible; }}
+
+@-moz-keyframes fadeOut { 0% { opacity: 0.9; visibility: visible; }  100% { opacity: 0; visibility: hidden; }}
+@-webkit-keyframes fadeOut { 0% { opacity: 0.9; visibility: visible; }  100% { opacity: 0; visibility: hidden; }}
+@-ms-keyframes fadeOut { 0% { opacity: 0.9; visibility: visible; } 100% { opacity: 0; visibility: hidden; }}
+@keyframes fadeOut { 0% { opacity: 0.9; visibility: visible; } 100% { opacity: 0; visibility: hidden;  }}
+
+.overlay-content {
+	position: relative;
+	top: 20%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #adbaca;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+}
+
+.overlay .closebtn {
+	position: fixed;
+	top: 5px;
+	left: 10px;
+	font-size: 60px;
+}
+
+.mobile-nav-me{
+	color: #d9dee4;
+}
+
+.mobile-nav-a{
+
+}
+
+/*.fade {*/
+	/*opacity: 1;*/
+	/*transition: opacity .25s ease-in-out;*/
+	/*-moz-transition: opacity .25s ease-in-out;*/
+	/*-webkit-transition: opacity .25s ease-in-out;*/
+/*}*/
+
+/******About******/
+
+.about-div{
+	display: flex;
+	align-items: center;
+	/*border-style: solid;*/
+	border-width: 1px;
+	/*color: red;*/
+	/*flex-flow: wrap;*/
+}
+
+.about-pic{
+	/*border-style: solid;*/
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 40%;
+	max-width: 200px;
+	padding: 15px 0px 15px 15px;
+}
+
+.about-pic img{
+	width: 100%;
+	/*max-width: 200px;*/
+}
+
+.about-descr{
+	/*border-style: dotted;*/
+	flex-grow: 0;
+	flex-shrink: 1;
+}
+
+.propicS_h{
+	display:none;
+}
+
+.about-ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.about-ul li{
+	/*border-style: solid;*/
+	margin: 0;
+	padding: 0;
+}
+
+.about-div p{
+	margin: 0 0 15px 0;
+	/*border-style: solid;*/
+}
+
+/*w3 schools nav*/
+/*nav {*/
+	/*!*margin: 0 auto;*!*/
+	/*display: flex;*/
+	/*-webkit-justify-content: center;*/
+	/*justify-content: center;*/
+	/*!*margin: auto;*!*/
+	/*position: fixed;*/
+	/*border-style:solid;*/
+
+	/*padding:0;*/
+	/*left: 10px;*/
+/*}*/
+
+/*ul.menu li:first-child{*/
+	/*display:none;*/
+/*}*/
+
+/*ul.menu.responsive li{*/
+	/*display: block;*/
+	/*position: fixed;*/
+	/*left: 50%;*/
+/*}*/
+
+/*nav ul{*/
+	/*border-style: dotted;*/
+
+
+	/*padding-left: 0;*/
+	/*list-style-type: none; */
+	/*!*border-collapse: collapse;*!*/
+/*}*/
+
+/*nav li{*/
+	/*flex: 0 1 100%;*/
+	/*!*display: inline-block;*!*/
+	/*!*display: table-cell;*!*/
+	/*border: 1px;*/
+	/*border-color: black;*/
+	/*border-style: solid;*/
+	/*background-color: #fff;*/
+/*}*/
+
+/*!*#active{*!*/
+	/*!*background-color: tomato;*!*/
+/*!*}*!*/
+
+/*nav a{*/
+	/*display: block;*/
+	/*padding: 5px 20px;*/
+	/*color: black;*/
+/*}*/
+
+/*------------Media Queries------------*/
+
+@media(max-width: 720px){
+	section{
+		width:100%;
+
+	}
+
+	.bar{
+		justify-content: flex-start;
+	}
+
+	.bar .nav-item{
+		display: none;
+	}
+
+	#hamburger{
+		display: block;
+	}
+
+	h1{
+
+	}
+
+	.menu{
+		margin: 0px 20px;
+		display: block;
+	}
+	/*ul.menu li:first-child{*/
+		/*display:block;*/
+	/*}*/
+	/*ul.menu li:not(:first-child){*/
+		/*display:none;*/
+	/*}*/
+
+	/*nav li{*/
+		/*display: block;*/
+		/*width: 100%;*/
+	/*}*/
+}
+
+@media(max-width: 540px){
+	.about-div{
+		flex-flow: wrap;
+	}
+	.about-descr{
+		flex-grow: 1;
+		flex-basis: 100%;
+	}
+	.about-pic{
+		display: none;
+	}
+	.propicS_h{
+		/*border-style: solid;*/
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 0 1 100%; /*this is needed for centering...*/
+		/*margin: 0 auto;*/
+		/*align-self: center;*/
+		/*justify-content: center;*/
+	}
+
+	section{
+		width:100%;
+
+	}
+	article{
+		padding: 0;
+	}
+	/*nav li{*/
+		/*position: static;*/
+		/*display: block;*/
+		/*width: 100%;*/
+	/*}*/
+}
+
+@media(max-width: 390px){
+	/*section{*/
+		/*width:100%;*/
+		/*display: block;*/
+		/*!*border-style:solid;*!*/
+	/*}*/
+
+
+	h1{
+		font-size: 140%;
+	}
+
+	section {
+		width: 100%;
+	}
+
+	img{
+		max-width: 100%;
+	}
+
+
+	/*nav li{*/
+		/*display: block;*/
+		/*width: 100%;*/
+	/*}*/
+}

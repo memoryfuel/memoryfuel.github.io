@@ -1,0 +1,75 @@
+p, footer{
+    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: #232328;
+}
+
+.bar{
+    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+h1{
+    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 110%;
+    margin-bottom: 2px;
+}
+
+.nav-a{
+    color: #5a515e;
+}
+
+.me{
+    color:#000;
+}
+
+.my-list{
+    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.memory-fuel{
+    font-size: 300%;
+    font-family: 'Unna', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-color: #232328;
+}
+
+.section-header{
+    font-family: 'Scada', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-color: #232328;
+}
+
+h3{
+    font-family: 'Scada', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+/*footer{*/
+    /*font-family: 'Scada', Helvetica, Arial, sans-serif;*/
+    /*font-weight: 500;*/
+    /*font-color: #232328;*/
+/*}*/
+
+/*******Links******/
+.my-link{
+    color: royalblue;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:visited{
+    color: royalblue;
+}
+
+a{
+    text-decoration: none;
+}
+
+/**** overlay nav ****/
+.overlay-content {
+    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+}

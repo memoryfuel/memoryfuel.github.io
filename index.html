@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Taviraj">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Scada">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Unna">
+    <!--make sure fonts.css file loads below all other css files and below fonts-->
+
+    <link rel="stylesheet" href="css/swiperstyles.css">
+    <link rel="stylesheet" href="Swiper-3.4.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+<body>
+<div class="cover">
+<div id="mobile-nav" class="overlay fade fadeOut">
+    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+    <div id= "overlay-content-ID" class="overlay-content" >
+        <a style="color: #c5d6e0" class="mobile-nav-me mobile-nav-a" href="#top" onclick="openNav()"><strong>Danny Diaz-Etchevehere</strong></a>
+        <a href="#Research" class="mobile-nav-a" onclick="openNav()">Research</a>
+        <a href="#Game-Dev" class="mobile-nav-a" onclick="openNav()">Game Development</a>
+        <a href="#Art" class="mobile-nav-a" onclick="openNav()">Art</a>
+        <a href="#About" class="mobile-nav-a" onclick="openNav()">About</a>
+    </div>
+</div>
+<!--onclick="openNav()"-->
+<span class="hamburger-class" id="hamburger" onclick="openNav()">&#9776;</span>
+
+<div id="barID" class="bar">
+    <div class="menu">
+        <!--<a href="javascript:void(0);" onclick="myFunction()"><strong>&#9776;</strong>-->
+        <!--</a>-->
+
+    </div>
+    <div ><h1><a href="#top" class="me">Danny Diaz-Etchevehere</a></h1></div>
+    <div class="nav-item"><a href="#Research" class="nav-a">Research</a></div>
+    <div class="nav-item"><a href="#Game-Dev" class="nav-a">Game Development</a></div>
+    <div class="nav-item"><a href="#Art" class="nav-a">Art</a></div>
+    <div class="nav-item"><a href="#About" class="nav-a">About</a></div>
+</div>
+
+
+
+<!--add this https://css-tricks.com/autoprefixer/-->
+<!--and other boiler plate stuff-->
+
+<div class="container">
+    <!--<nav>-->
+        <!--<ul id="menuID" class="menu">-->
+            <!--<li class="icon">-->
+                <!--<a href="javascript:void(0);" onclick="myFunction()">&#9776;-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li><a href="#Research">Research</a></li>-->
+            <!--<li><a href="#Game Dev">Game Development</a></li>-->
+            <!--<li><a href="#Art">Art</a></li>-->
+            <!--<li><a href="#About">About</a></li>-->
+        <!--</ul>-->
+    <!--</nav>-->
+    <div id="top">
+        <h2 class="memory-fuel">memory fuel</h2>
+        <img src="images/illustration-graphic-design/laputian-robot.png" alt="laputian robot">
+    </div>
+    <section>
+        <a class="anchor" id="Research"></a>
+        <div id="research-content" class="contentitem">
+            <h2 class="section-header">Research</h2>
+
+            <div>
+                <h3>Virtual Reality</h3>
+                    <p>Research on data visualization in VR at the MIT Media Lab's Macro Connections group through the MIT Summer Research Program (MSRP) under the supervision of Takahito Ito (NHK) and César Hidalgo (MIT). Summer 2016. </p>
+                    <p><a class="my-link" href="https://vimeo.com/189385744">Video </a> | <a href="https://medium.com/mit-media-lab/summer-research-interns-bring-diverse-experiences-and-ideas-to-the-media-lab-ead5783b994f#.50riud89k" class="my-link">Media Lab blog post about MSRP 2016 interns</a></p>
+            </div>
+
+            <div>
+                <h3>Senior Thesis</h3>
+                    <p>Conducted under the supervision of John Kessler (Department of Earth & Environmental Sciences) at the University of Rochester. Spring 2015-2016. </p>
+            </div>
+
+            <div>
+                <h3>Nitrogen Stable Isotopes</h3>
+                    <p>REU research conducted under the supervision of Scott Wankel (Department of Marine Chemistry & Geochemistry), Woods Hole Oceanographic Institution. Summer 2015. Poster presented at American Geophysical Union Fall Meeting 2015.</p>
+
+                    <a href="images/AGUposter.png"><img class="displayed" src="images/AGUposterS.png" alt="AGU Poster" style="max-width: 700px"></a>
+
+            </div>
+        </div><!--Research-->
+    </section>
+    <section>
+        <a class="anchor" id="Game-Dev"></a>
+        <div id="game-dev-content" class="contentitem">
+            <h2 class="section-header">Game Development</h2>
+            <div id="Transcontinental">
+                <h3>Transcontinental</h3>
+                <!--used embedresponsively.com-->
+                <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;} .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://player.vimeo.com/video/161123173' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+                <p class="p-no-margin-bottom"><em>Transcontinental</em> is a narrative-based game about a 17-year-old girl traveling back and forth between Washington, DC and California on a train during summer. She finds insight and solace from conversations with strangers along the way, but also a few cold shoulders. </p>
+            </div>
+        </div><!--Game Dev-->
+    </section>
+    <section>
+        <a class="anchor" id="Art"></a>
+        <div id="art-content" class="contentitem">
+            <h2 class="section-header">Art</h2>
+
+            <div id="hours">
+                <h3>(h)ours</h3>
+                <img id="hours-prev" class="displayed" src="images/hoursposter_transparent.gif" alt="hours preview" >
+                <p><em><a href="https://ddiazetc.github.io/irl/" class="my-link">(h)ours</a></em> is a fictionalized memoir of online roleplaying on forums in grade school. It is about the fantastical worlds can children construct collaboratively even when their conceptions of each other are purely virtual, and these worlds are juxtaposed with the banalities of childhood.</p>
+            </div>
+
+            <div id="illustration-and-graphic-design">
+                <h3>Illustration & graphic design</h3>
+                 <!--Swiper -->
+                <div class="additionalcontainer">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="my-swiper-img" src="images/illustration-graphic-design/escape.png" alt="escape!"></div>
+                        <div class="swiper-slide"><img class="my-swiper-img" src="images/illustration-graphic-design/lucidity.jpg" alt="lucidity"></div>
+                        <div class="swiper-slide"><img class="my-swiper-img" src="images/illustration-graphic-design/threshold.jpg" alt="threshold"></div>
+                        <div class="swiper-slide"><img class="my-swiper-img" src="images/illustration-graphic-design/sample-graphicnovel-pg.png" alt="sample graphic novel page"></div>
+                        <div class="swiper-slide"><img class="my-swiper-img" src="images/illustration-graphic-design/char-designs.png" alt="char designs"></div>
+                        <div class="swiper-slide"><img class="my-swiper-img" src="images/illustration-graphic-design/dreamconductor.jpg" alt="dream conductor"></div>
+                        <div class="swiper-slide"><img class="my-swiper-img" src="images/illustration-graphic-design/wind-and-water-within-thee.png" alt="spirited away"></div>
+                        <div class="swiper-slide"><img class="my-swiper-img" src="images/illustration-graphic-design/what-are-you-looking-at.png" alt="giraffe man"></div>
+                        <div class="swiper-slide"><img class="my-swiper-img" src="images/illustration-graphic-design/ben-kronk.png" alt="ben kronk"></div>
+                        <div class="swiper-slide"><img class="my-swiper-img" src="images/illustration-graphic-design/ur-h2o.png" alt="UR H2O"></div>
+                        <div class="swiper-slide"><img class="my-swiper-img" src="images/illustration-graphic-design/art-as-activism.jpg" alt="art as activism"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div></div>
+                <p>More art: <a class="my-link" href="http://memoryfuel.tumblr.com/">Tumblr</a> | <a class="my-link" href="http://dannayy.deviantart.com/">DeviantArt</a>
+            </div>
+            <div id="shows" class="my-list">
+                <h3>Exhibitions</h3>
+                <p>Group shows all in Rochester, NY</p>
+                <ul>
+                    <li>Art Awake (2013)</li>
+                    <li>IMPACT GlobeMed Art Gala (2013)</li>
+                    <li>Say Something! GlobeMed Art Gala (2014)</li>
+                    <li>UR Arts Bus, Fringe Festival, Rochester, NY, group exhibition (2015)</li>
+                    <li>UR Active Minds HeART of Disorder Juried Exhibition (2016)</li>
+                    <li>xyz: The Hartnett Gallery Undergraduate Juried Exhibition (2016)</li>
+                    <li>Art Awake (2016)</li>
+                    <li>Fairness: the Paul J Burgett Intercultural Center Juried Exhibition (2016)</li>
+                </ul>
+            </div>
+        </div><!--Art-->
+    </section>
+    <section>
+        <a class="anchor" id="About"></a>
+        <div id="about-content" class="contentitem">
+            <h2 class="section-header">About</h2>
+            <div class="about-div">
+                <div class="about-descr"><p>Danny is from the Washington, D.C. area and studies Environmental Science (with some art and computer science thrown in there...) at the University of Rochester, NY. He is interested in creating stories with many different digital media.</p>
+                <!--<ul class="about-ul">-->
+                    <!--<li><a class="my-link" href="#">CV</a></li>-->
+                    <!--<li><a class="my-link" href="https://www.linkedin.com/in/daniel-diaz-etchevehere-02985b82">LinkedIn</a></li>-->
+                <!--</ul>-->
+                <p><a class="my-link" href="#">CV</a> | <a class="my-link" href="https://www.linkedin.com/in/daniel-diaz-etchevehere-02985b82">LinkedIn</a> | <strong>Contact</strong>: ddiazetc@u.rochester.edu</p>
+
+                </div>
+                <div class="about-pic"><img id="propic" src="images/propicS_h.png" alt="Danny"></div>
+                <div class="propicS_h">
+                    <img src="images/propicS_h.png" alt="me-h">
+                </div>
+            </div>
+
+
+        </div><!--About-->
+    </section>
+
+    <footer>
+        Website made by me 8)<br>
+    </footer>
+</div><!--container-->
+
+<!--old version-->
+<!--<script>function myFunction(){-->
+    <!--var x = document.getElementById("menuID");-->
+    <!--if(x.className === "menu"){-->
+        <!--x.className += "responsive";-->
+    <!--} else {-->
+        <!--x.className = "menu";-->
+    <!--}-->
+<!--}</script>-->
+<script>document.getElementById("mobile-nav").style.opacity = "0";</script> <!--For some reason the opacity isn't 0 immediately.-->
+<script src="js/rdm.js"></script>
+
+<script>function myFunction(){
+    var x = document.getElementById("barID");
+
+    if(x.className === "bar"){
+        x.className += " responsive";
+        $('.bar').find('*').addClass('responsive');
+    } else {
+        x.className = "bar";
+        $('.bar').find('*').removeClass('responsive');
+    }
+}</script>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<!--<script src="js/jquery.smooth-scroll.js"></script>-->
+
+<!--<script>-->
+
+    <!--$(".jumper").on("click", function( e ) {-->
+
+    <!--e.preventDefault();-->
+
+    <!--$("body, html").animate({-->
+        <!--scrollTop: $( $(this).attr('href') ).offset().top-->
+    <!--}, 600);-->
+
+<!--});</script>-->
+
+<!-- Swiper JS -->
+<script src="Swiper-3.4.0/dist/js/swiper.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        paginationType: 'fraction',
+        loop: true
+    });
+</script>
+
+<!--fade overlay-->
+<script>
+    $('.hamburger-class').click(function() {
+        document.getElementById("mobile-nav").style.zIndex = "21";
+         $('.overlay').toggleClass('fadeOut');
+    });
+    $('.mobile-nav-a').click(function() {
+
+        $('.overlay').toggleClass('fadeOut');
+    });
+</script>
+    <!--still have the problem of if the user is in mobile mode and then resizes the window and the hamburger goes away... try using a listener
+    modernweb.com/2014/03/24/using-media-queries-in-javascript-->
+
+
+
+
+
+<!-- Use the following JavaScript code to do the smooth-scroll thing on the internal links -->
+<!--<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>-->
+<script>
+    // From:    Smooth Scrolling by CHRIS COYIER, updated JANUARY 31, 2016
+    //          https://css-tricks.com/snippets/jquery/smooth-scrolling
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 250);
+                    return false;
+                }
+            }
+        });
+    });
+</script>
+</div>
+</body>
+</html>
