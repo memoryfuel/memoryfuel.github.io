@@ -1,6 +1,6 @@
 //inspired by http://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
 //openNav is just for changing the hamburger symbol => x and back. Doesn't fade
-function openNav() {
+function openNav() { 
     var hamburger = document.getElementById("hamburger");
     if(document.getElementById("mobile-nav").style.opacity == "0"){
         document.getElementById("mobile-nav").style.opacity = "0.9";
