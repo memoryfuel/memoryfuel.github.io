@@ -34,7 +34,6 @@ body{
 
 #research-content{
 	background-color: #d9dee4; /*Frost*/
-    /*margin-top: 50px;*/
 }
 
 #game-dev-content{
@@ -76,10 +75,7 @@ h2{
 }
 
 header{
-    /*background-image: url("../images/illustration-graphic-design/laputian-robot.png");*/
-    /*background-size: 100%;*/
     width: 100%;
-
     margin: 0px;
     padding: 0px;
 
@@ -200,22 +196,9 @@ a.anchor {
 	padding: 0px 20px;
 }
 
-/*a.nav-a{*/
-    /*display: block;*/
-    /*position: relative;*/
-    /*top: -250px;*/
-    /*visibility: hidden;*/
-/*}*/
-
 .menu{
 	display: none;
 }
-
-/*.menu.responsive .nav-item{*/
-	/*!*display: block;*!*/
-	/*position: fixed;*/
-	/*display: flex;*/
-/*}*/
 
 .bar .responsive{
 	background-color: cyan;
@@ -224,15 +207,11 @@ a.anchor {
 }
 
 .bar .nav-item .responsive{
-	/*position: fixed;*/
 	overflow: visible;
 	display:block;
 	color: blue;
 	height: 50px;
-	/*flex: 0 1 100%;*/
-	/*width:100%;*/
 	background-color: #eee;
-	/*align-content: center;*/
 	border-style: solid;
 }
 
@@ -252,7 +231,6 @@ a.anchor {
 #mobile-nav{
 	top: 0;
 	opacity: 0;
-	/*visibility: hidden;*/
 	transition: opacity .25s;
 	z-index: -2000;
 }
@@ -261,11 +239,9 @@ a.anchor {
 	height: 100%;
 	width: 100%;
 	position: fixed;
-
 	top: 0;
 	left: 0;
 	background-color: rgb(0,0,0);
-	/*background-color: rgba(0,0,0, 0.9);*/
 	overflow-y: hidden;
 	/*for fade... from https://jsfiddle.net/v8201h5q/3/*/
 	/*orig from http://stackoverflow.com/questions/30064932/hide-element-after-fade-out-using-only-css*/
@@ -341,26 +317,15 @@ a.anchor {
 
 }
 
-/*.fade {*/
-	/*opacity: 1;*/
-	/*transition: opacity .25s ease-in-out;*/
-	/*-moz-transition: opacity .25s ease-in-out;*/
-	/*-webkit-transition: opacity .25s ease-in-out;*/
-/*}*/
-
 /******About******/
 
 .about-div{
 	display: flex;
 	align-items: center;
-	/*border-style: solid;*/
 	border-width: 1px;
-	/*color: red;*/
-	/*flex-flow: wrap;*/
 }
 
 .about-pic{
-	/*border-style: solid;*/
 	flex-grow: 1;
 	flex-shrink: 0;
 	flex-basis: 40%;
@@ -370,11 +335,9 @@ a.anchor {
 
 .about-pic img{
 	width: 100%;
-	/*max-width: 200px;*/
 }
 
 .about-descr{
-	/*border-style: dotted;*/
 	flex-grow: 0;
 	flex-shrink: 1;
 }
@@ -390,68 +353,32 @@ a.anchor {
 }
 
 .about-ul li{
-	/*border-style: solid;*/
 	margin: 0;
 	padding: 0;
 }
 
 .about-div p{
 	margin: 0 0 15px 0;
-	/*border-style: solid;*/
 }
 
-/*w3 schools nav*/
-/*nav {*/
-	/*!*margin: 0 auto;*!*/
-	/*display: flex;*/
-	/*-webkit-justify-content: center;*/
-	/*justify-content: center;*/
-	/*!*margin: auto;*!*/
-	/*position: fixed;*/
-	/*border-style:solid;*/
+/* from embed responsively */
 
-	/*padding:0;*/
-	/*left: 10px;*/
-/*}*/
+.embed-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+}
 
-/*ul.menu li:first-child{*/
-	/*display:none;*/
-/*}*/
+.embed-container iframe, .embed-container object, .embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 
-/*ul.menu.responsive li{*/
-	/*display: block;*/
-	/*position: fixed;*/
-	/*left: 50%;*/
-/*}*/
-
-/*nav ul{*/
-	/*border-style: dotted;*/
-
-
-	/*padding-left: 0;*/
-	/*list-style-type: none; */
-	/*!*border-collapse: collapse;*!*/
-/*}*/
-
-/*nav li{*/
-	/*flex: 0 1 100%;*/
-	/*!*display: inline-block;*!*/
-	/*!*display: table-cell;*!*/
-	/*border: 1px;*/
-	/*border-color: black;*/
-	/*border-style: solid;*/
-	/*background-color: #fff;*/
-/*}*/
-
-/*!*#active{*!*/
-	/*!*background-color: tomato;*!*/
-/*!*}*!*/
-
-/*nav a{*/
-	/*display: block;*/
-	/*padding: 5px 20px;*/
-	/*color: black;*/
-/*}*/
 
 /*------------Media Queries------------*/
 
@@ -481,17 +408,6 @@ a.anchor {
 		margin: 0px 20px;
 		display: block;
 	}
-	/*ul.menu li:first-child{*/
-		/*display:block;*/
-	/*}*/
-	/*ul.menu li:not(:first-child){*/
-		/*display:none;*/
-	/*}*/
-
-	/*nav li{*/
-		/*display: block;*/
-		/*width: 100%;*/
-	/*}*/
 }
 
 @media(max-width: 540px){
@@ -506,14 +422,10 @@ a.anchor {
 		display: none;
 	}
 	.propicS_h{
-		/*border-style: solid;*/
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex: 0 1 100%; /*this is needed for centering...*/
-		/*margin: 0 auto;*/
-		/*align-self: center;*/
-		/*justify-content: center;*/
 	}
 
 	section{
@@ -523,21 +435,9 @@ a.anchor {
 	article{
 		padding: 0;
 	}
-	/*nav li{*/
-		/*position: static;*/
-		/*display: block;*/
-		/*width: 100%;*/
-	/*}*/
 }
 
 @media(max-width: 390px){
-	/*section{*/
-		/*width:100%;*/
-		/*display: block;*/
-		/*!*border-style:solid;*!*/
-	/*}*/
-
-
 	h1{
 		font-size: 140%;
 	}
@@ -549,10 +449,4 @@ a.anchor {
 	img{
 		max-width: 100%;
 	}
-
-
-	/*nav li{*/
-		/*display: block;*/
-		/*width: 100%;*/
-	/*}*/
 }

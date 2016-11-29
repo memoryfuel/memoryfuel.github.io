@@ -1,26 +1,15 @@
 .swiper-container {
     display: flex;
-    /*align-items: center;*/
     flex: 0 1 100%;
     width: 100%;
-    /*max-width: 200px;*/
      height: 100%;
-     /*margin: 0px auto;*/
-
     border-color: #333333;
-    /*color: red;*/
  }
 
 .swiper-slide {
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
     text-align: center;
     font-size: 18px;
-    /*background: pink;*/
     line-height: 100px;
-    /*width: 100%;*/
-    /*max-width: 960px;*/
 }
 
 .my-swiper-img{
