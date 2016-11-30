@@ -6,35 +6,17 @@
     text-align: center;
     max-height: 700px;
     max-width: 1024px;
-    /*height: 800px;*/
-     /*height: 100%;*/
-    /*border-style:solid;*/
  }
- 
-.swiper-slide {
-
-
-    /*display: flex;*/
-    /*align-items: center;*/
-
-    /*font-size: 50px; !*ensure the number doens't overlap the image*!*/
-    /*line-height: 100px;*/
-
-}
-
-/*.swiper-zoom-container{*/
-   /*max-height: 750px;*/
-    /*!*width: 100%;*!*/
-    /*!*border-style: dotted;*!*/
-/*}*/
 
 .text{
     margin-bottom: 25px;
 }
 .my-swiper-img{
-    max-height: 600px;
-    /*height: 750px;*/
-    /*max-height: 500px;*/
-    /*line-height: 100px;*/
-    /*margin-bottom: 30px;*/
+    max-height: 600px; /*make sure there's a dif between max-height of img and max-height of container so that the image scaling works properly and you can see the caption.*/
+}
+
+@media(max-width: 390px){
+    .text{
+        font-size: .8em;
+    }
 }
