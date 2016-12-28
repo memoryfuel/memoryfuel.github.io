@@ -147,6 +147,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             galleryUID: galleryElement.getAttribute('data-pswp-uid'),
             showAnimationDuration: 0,
        		hideAnimationDuration: 0,
+       		showHideOpacity: true,
 
             
             getThumbBoundsFn: function(index) {
