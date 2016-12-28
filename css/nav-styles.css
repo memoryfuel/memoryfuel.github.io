@@ -1,0 +1,147 @@
+/*------------ Navigation ------------*/
+
+.bar{ 
+	z-index: 10;
+	opacity: 1;
+	transition: opacity .25s;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background: #eee;
+	padding: 0px 0px;
+	height: 40px;
+	/*material design box shadow from https://codepen.io/sdthornton/pen/wBZdXq*/
+	box-shadow: 0 2px 5px rgba(0,0,0,0.13), 0 2px 5px rgba(0,0,0,0.20);
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -45px;
+    visibility: hidden;
+}
+
+.nav-item{
+	text-align: center;
+	padding: 0px 20px;
+}
+
+.menu{
+	display: none;
+}
+
+/*------------ Mobile nav overlay ------------*/
+
+#hamburger{
+	display: none;
+	z-index: 21;
+	position: fixed;
+	top: 0px;
+	left: 10px;
+	font-size: 30px;
+	cursor: pointer;
+	color: #adbaca;
+}
+
+#mobile-nav{
+	top: 0;
+	opacity: 0;
+	transition: opacity .25s;
+	z-index: -2000;
+}
+
+.mobile-nav-me{
+	color: #d9dee4;
+}
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	overflow-y: hidden;
+	/*Fade from https://jsfiddle.net/v8201h5q/3/*/
+	/*originally from http://stackoverflow.com/questions/30064932/hide-element-after-fade-out-using-only-css*/
+	animation-name: fadeIn;
+	animation-duration: .25s;
+	animation-fill-mode: forwards;
+}
+.overlay.fadeOut {
+	animation-name: fadeOut;
+}
+
+@keyframes fadeIn { 
+	0% { 
+		opacity: 0; 
+		visibility: hidden; 
+		} 
+	100% { 
+		opacity: 0.9; 
+		visibility: visible; 
+		}
+	}
+
+@keyframes fadeOut {
+	 0% { 
+	 	opacity: 0.9; 
+	 	visibility: visible; 
+	 	} 
+	100% { 
+		opacity: 0; 
+		visibility: hidden;  
+		}
+	}
+
+.overlay-content {
+	position: relative;
+	top: 20%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #adbaca;
+	display: block;
+	transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+}
+
+.overlay .closebtn {
+	position: fixed;
+	top: 5px;
+	left: 10px;
+	font-size: 60px;
+}
+
+/*------------ Media queries ------------*/
+
+@media(max-width: 720px){
+
+	.bar{
+		justify-content: flex-start;
+	}
+
+	.bar .nav-item{
+		display: none;
+	}
+
+	#hamburger{
+		display: block;
+	}
+
+	.menu{
+		margin: 0px 20px;
+		display: block;
+	}
+}

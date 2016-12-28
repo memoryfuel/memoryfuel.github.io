@@ -5,20 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1">
 
     <title>memory fuel</title>
+    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav-styles.css">
+
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Taviraj">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Scada">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Unna">
 
+
     <link rel="stylesheet" href="css/swiperstyles.css">
+    <!--Swiper-->
     <link rel="stylesheet" href="Swiper-3.4.0/dist/css/swiper.min.css">
+
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="PhotoSwipe-master/dist/photoswipe_edit.css"> 
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+         In the folder of skin CSS file there are also:
+         - .png and .svg icons sprite, 
+         - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="PhotoSwipe-master/dist/default-skin/default-skin.css">
+
+    <!--AOS CSS transitions-->
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
-<div class="cover">
+<div class="cover"><!--Need an extra div so that the mobile nav fullscreen overlay isn't seen too early.-->
+
+<!--Fullscreen overlay for mobile-->
 <div id="mobile-nav" class="overlay fade fadeOut">
     <div id= "overlay-content-ID" class="overlay-content" >
         <a style="color: #c5d6e0" class="mobile-nav-me mobile-nav-a" href="#top" onclick="openNav()"><strong>Danny Diaz-Etchevehere</strong></a>
@@ -29,32 +47,38 @@
     </div>
 </div>
 
+<!--hamburger icon for mobile-->
 <span class="hamburger-class" id="hamburger" onclick="openNav()">&#9776;</span>
 
+<!--responsive top-nav-->
 <div id="barID" class="bar">
     <div class="menu"></div>
-    <div ><h1><a href="#top" class="me">Danny Diaz-Etchevehere</a></h1></div>
+    <div><h1><a href="#top" class="h1-name">Danny Diaz-Etchevehere</a></h1></div>
     <div class="nav-item"><a href="#Research" class="nav-a">Research</a></div>
     <div class="nav-item"><a href="#Game-Dev" class="nav-a">Game Development</a></div>
     <div class="nav-item"><a href="#Art" class="nav-a">Art</a></div>
     <div class="nav-item"><a href="#About" class="nav-a">About</a></div>
 </div>
 
-<div class="container">
-    <div id="top">
-        <h2 class="memory-fuel">memory fuel</h2>
-        <img src="images/art/laputian-robot.jpg" alt="laputian robot">
-    </div>
-    <section>
+<div class="container" data-aos="fade">
+    <section class="hero-content" >
+        <a class="anchor" id="top"></a>
+        <div id="hero">
+            <h2 class="hero-header" data-aos="fade-up">memory fuel</h2>
+            <img id="hero-img" src="images/art/Piers_122416_h_crop.jpg" alt="laputian robot" style="margin-bottom: -4px">
+        </div>
+    </section>
+
+    <section class="research-content">
         <a class="anchor" id="Research"></a>
-        <div id="research-content" class="contentitem">
+        <div class="research-content contentitem">
             <h2 class="section-header">Research</h2>
 
             <div>
                 <h3>Virtual Reality</h3>
-                    <p>Research on data visualization in VR at the MIT Media Lab's Macro Connections group through the MIT Summer Research Program (MSRP) under the supervision of Takahito Ito (NHK) and César Hidalgo (MIT). Summer 2016. </p>
-                    <p>Created a storytelling experience based on data from the group’s project DataUSA in virtual reality using Unreal Engine 4 and Vive. Programmed 3D visualizations of the data and designed the interactions with the data and the narrative structure.</p>
-                    <p><a class="my-link" href="https://vimeo.com/189385744">Video (password protected)</a> | <a href="https://medium.com/mit-media-lab/summer-research-interns-bring-diverse-experiences-and-ideas-to-the-media-lab-ead5783b994f#.50riud89k" class="my-link">Media Lab blog post about MSRP 2016 interns</a></p>
+                <p>Research on data visualization in VR at the MIT Media Lab's Macro Connections group through the MIT Summer Research Program (MSRP) under the supervision of Takahito Ito (NHK) and César Hidalgo (MIT). Summer 2016. </p>
+                <p>Created a storytelling experience based on data from the group’s project DataUSA in virtual reality using Unreal Engine 4 and Vive. Programmed 3D visualizations of the data and designed the interactions with the data and the narrative structure.</p>
+                <p><a class="my-link" href="https://vimeo.com/189385744">Video</a> | <a href="https://medium.com/mit-media-lab/summer-research-interns-bring-diverse-experiences-and-ideas-to-the-media-lab-ead5783b994f#.50riud89k" class="my-link">Media Lab blog post about MSRP 2016 interns</a>.</p>
             </div>
 
             <div>
@@ -65,116 +89,157 @@
 
             <div>
                 <h3>Nitrogen Stable Isotopes</h3>
-                    <p>REU research conducted under the supervision of Scott Wankel (Department of Marine Chemistry & Geochemistry), Woods Hole Oceanographic Institution. Summer 2015. Poster presented at American Geophysical Union Fall Meeting 2015.</p>
+                    <p>REU research conducted under the supervision of Scott Wankel (Department of Marine Chemistry & Geochemistry), Woods Hole Oceanographic Institution. Summer 2015. <a href="images/AGUposter.png" class="my-link">Poster</a> presented at American Geophysical Union Fall Meeting 2015.</p>
                     <p>Investigated the impact of Fe(II) on the isotope dynamics of nitrite and nitrous oxide during simultaneous denitrification and chemodenitrification in anaerobic estuarine sediment incubations.</p>
-                    <a href="images/AGUposter.png"><img class="displayed" src="images/AGUposterS.png" alt="AGU Poster" style="max-width: 700px"></a>
-
             </div>
         </div><!--Research-->
     </section>
-    <section>
+    <section class="game-dev-content">
         <a class="anchor" id="Game-Dev"></a>
-        <div id="game-dev-content" class="contentitem">
+        <div class="game-dev-content contentitem">
             <h2 class="section-header">Game Development</h2>
             <div id="Transcontinental">
                 <h3>Transcontinental</h3>
                 <!--used embedresponsively.com-->
-                <div class='embed-container'><iframe src='https://player.vimeo.com/video/193284337' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+                <div class='embed-container'><iframe src='https://player.vimeo.com/video/193284337' allowFullScreen></iframe></div>
                 <p class="p-no-margin-bottom"><em>Transcontinental</em> is a narrative-based game about a 17-year-old girl traveling back and forth between Washington, DC and California on a train during summer. She finds insight and solace from conversations with strangers along the way, but also a few cold shoulders. The game is an experiment to see if 1) the story of the main character can be told in a nonlinear way through conversations with the train's passengers, since the player is able to choose who to talk to, and 2) if these conversations alone and the implicit goal of learning about the characters in this setting constitute meaningful interaction/decisions in the game.</p>
-				<p>(Work in progress!)</p>
+			     <p>(Work in progress!)</p>
                 <p>Featured in the Independent Variables show, University of Rochester's Sage Art Center, 2016.</p>
-                <a href="images/ind_vars.jpg"><img class="displayed" src="images/ind_vars_500px.jpg" alt="show" style="max-width: 400px;"></a>
+                <img class="displayed" src="images/ind_vars.jpg" alt="show" style="max-width: 400px;">
 
             </div>
         </div><!--Game Dev-->
     </section>
-    <section>
+    <section class="art-content">
         <a class="anchor" id="Art"></a>
-        <div id="art-content" class="contentitem">
+        <div class="art-content contentitem">
             <h2 class="section-header">Art</h2>
 
             <div id="hours">
                 <h3>(h)ours</h3>
                 <a href="https://memoryfuel.github.io/hours/"><img id="hours-prev" class="displayed" src="images/hoursposter_transparent.gif" alt="hours preview" ></a>
                 <p><em><a href="https://memoryfuel.github.io/hours/" class="my-link">(h)ours</a></em> is a fictionalized memoir of online roleplaying on forums in grade school. It is about the fantastical worlds can children construct collaboratively even when their conceptions of each other are purely virtual, and these worlds are juxtaposed with the banalities of childhood.</p>
-				<p>(Work in progress!)</p>
+                <p>(Work in progress!)</p>
+				
             </div>
 
             <div id="illustration-and-graphic-design">
                 <h3>Illustration & graphic design</h3>
                  <!--Swiper -->
-                <div class="additionalcontainer">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                             <a href="images/art/escape_sq.png"><img class="my-swiper-img" src="images/art/escape_sq.png" alt="escape!"></a>
-                            <div class="text"><p>Escape! Digital drawing.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/laputian-robot_sq.png"><img class="my-swiper-img" src="images/art/laputian-robot_sq.png" alt="laputa"></a>
-                            <div class="text"><p>Laputian Robot (from Castle in the Sky). Digital drawing.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/lucidity_sq.jpg"><img class="my-swiper-img" src="images/art/lucidity_sq.jpg" alt="lucidity"></a>
-                            <div class="text"><p>Lucidity. Digital drawing.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/threshold_sq.jpg"><img class="my-swiper-img" src="images/art/threshold_sq.jpg" alt="threshold"></a>
-                            <div class="text"><p>The Threshold. Digital drawing.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/sample-graphicnovel-pg_sq.png"><img class="my-swiper-img" src="images/art/sample-graphicnovel-pg_sq.png" alt="sample graphic novel page"></a>
-                            <div class="text"><p>Sample graphic novel page. Digital drawing.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/sample-page-2_sq.png"><img class="my-swiper-img" src="images/art/sample-page-2_sq.png" alt="sample graphic novel page 2"></a>
-                            <div class="text"><p>Sample graphic novel page. Digital drawing.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/char-designs.png"><img class="my-swiper-img" src="images/art/char-designs.png" alt="char designs"></a>
-                            <div class="text"><p>Character designs. Digital drawing.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/dreamconductor_sq.jpg"><img class="my-swiper-img" src="images/art/dreamconductor_sq.jpg" alt="dream conductor"></a>
-                            <div class="text"><p>Dream Conductor. Pencil.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/wind-water-within-thee_sq_1500px.png"><img class="my-swiper-img" src="images/art/wind-water-within-thee_sq_1500px.png" alt="spirited away"></a>
-                            <div class="text"><p>In the name of the wind and water within thee... (Spirited Away). Digital drawing.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/what-are-you-looking-at_sq.png"><img class="my-swiper-img" src="images/art/what-are-you-looking-at_sq.png" alt="giraffe man"></a>
-                            <div class="text"><p>What are You Looking At? Digital drawing.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/ben-kronk_sq.png"><img class="my-swiper-img" src="images/art/ben-kronk_sq.png" alt="ben kronk">
-                            <div class="text"><p>Ben Kronk performance poster. Digital drawing, commissioned.</p></div></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/brain_xsections_sq.jpg"><img class="my-swiper-img" src="images/art/brain_xsections_sq.jpg" alt="brain xsections"></a>
-                            <div class="text"><p>Neural Networks. Painted with Nomi Miller. Acrylic, commissioned.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/discerning_sq.pngc"><img class="my-swiper-img" src="images/art/discerning_sq.png" alt="discerning"></a>
-                            <div class="text"><p>Discerning. Watercolor.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/ur-h2o_sq.png"><img class="my-swiper-img" src="images/art/ur-h2o_sq.png" alt="UR H2O"></a>
-                            <div class="text"><p>UR H2O. Digital, designed for University of Rochester's Dining & Auxiliary Services.</p></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="images/art/art-as-activism_sq.jpg"><img class="my-swiper-img" src="images/art/art-as-activism_sq.jpg" alt="art as activism"></a>
-                            <div class="text"><p>Art as Activism. Digital.</p></div>
-                        </div>
-                    </div>
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                    <!-- Add Arrows -->
-                    <!--<div class="swiper-button-next"></div>-->
-                    <!--<div class="swiper-button-prev"></div>-->
-                </div></div>
-                <p>More art: <a class="my-link" href="http://memoryfuel.tumblr.com/">Tumblr</a> | <a class="my-link" href="http://dannayy.deviantart.com/">DeviantArt</a>
-            </div>
+                
+                 <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/laputian-robot.png" itemprop="contentUrl" data-size="1280x876">
+                          <img src="images/art/laputian-robot_thumb.png" itemprop="thumbnail" alt="Laputian Robot" />
+                      </a>
+                        <figcaption itemprop="caption description">Laputian Robot (from Castle in the Sky). Digital drawing.</figcaption>
+                                                          
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/escape_12_24_16_1024h.png" itemprop="contentUrl" data-size="701x1024">
+                          <img src="images/art/escape_12_24_16_1024h_thumb.png" itemprop="thumbnail" alt="Escape!" />
+                      </a>
+                      <figcaption itemprop="caption description">Escape! Digital Drawing</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/lucidity.jpg" itemprop="contentUrl" data-size="696x1024">
+                          <img src="images/art/lucidity_thumb.jpg" itemprop="thumbnail" alt="Lucidity" />
+                      </a>
+                      <figcaption itemprop="caption description">Lucidity. Digital drawing.</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/threshold.jpg" itemprop="contentUrl" data-size="688x1024">
+                          <img src="images/art/threshold_thumb.jpg" itemprop="thumbnail" alt="The Threshold" />
+                      </a>
+                      <figcaption itemprop="caption description">The Threshold. Digital drawing.</figcaption>
+                    </figure>
+
+                     <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/sample-graphicnovel-pg.png" itemprop="contentUrl" data-size="668x1024">
+                          <img src="images/art/sample-graphicnovel-pg_thumb.png" itemprop="thumbnail" alt="Sample graphic novel pg 1" />
+                      </a>
+                        <figcaption itemprop="caption description">Sample graphic novel page. Digital drawing.</figcaption>
+                                                          
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/sample-page-2_s.png" itemprop="contentUrl" data-size="791x1000">
+                          <img src="images/art/sample-page-2_thumb.png" itemprop="thumbnail" alt="Sample graphic novel pg 2" />
+                      </a>
+                      <figcaption itemprop="caption description">Sample graphic novel page. Digital drawing.</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/char-designs.png" itemprop="contentUrl" data-size="1584x1584">
+                          <img src="images/art/char-designs_thumb.png" itemprop="thumbnail" alt="Character designs" />
+                      </a>
+                      <figcaption itemprop="caption description">Character designs. Digital drawing.</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/dreamconductor.jpg" itemprop="contentUrl" data-size="1280x855">
+                          <img src="images/art/dreamconductor_thumb.jpg" itemprop="thumbnail" alt="Dream Conductor" />
+                      </a>
+                      <figcaption itemprop="caption description">Dream Conductor. Pencil.</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/wind-and-water-within-thee.png" itemprop="contentUrl" data-size="1080x739">
+                          <img src="images/art/wind-water-within-thee_thumb.png" itemprop="thumbnail" alt="Wind and Water Within Thee" />
+                      </a>
+                      <figcaption itemprop="caption description">In the name of the wind and water within thee... (from Spirited Away). Digital drawing.</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/what-are-you-looking-at.png" itemprop="contentUrl" data-size="1280x835">
+                          <img src="images/art/what-are-you-looking-at_thumb.png" itemprop="thumbnail" alt="What are you looking at" />
+                      </a>
+                      <figcaption itemprop="caption description">What are you looking at? Digital drawing.</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/ben-kronk.png" itemprop="contentUrl" data-size="791x1024">
+                          <img src="images/art/ben-kronk_thumb.png" itemprop="thumbnail" alt="Ben Kronk" />
+                      </a>
+                      <figcaption itemprop="caption description">Ben Kronk performance poster at Eastman School of Music. Digital drawing; commissioned.</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/brain_xsections.jpg" itemprop="contentUrl" data-size="1518x526">
+                          <img src="images/art/brain_xsections_thumb.jpg" itemprop="thumbnail" alt="neural networks" />
+                      </a>
+                      <figcaption itemprop="caption description">Neural Networks. Painted with Nomi Miller. Acrylic; commissioned.</figcaption>
+                    </figure>
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/discerning.png" itemprop="contentUrl" data-size="1500x1089">
+                          <img src="images/art/discerning_thumb.png" itemprop="thumbnail" alt="Discerning" />
+                      </a>
+                      <figcaption itemprop="caption description">Discerning. Watercolor.</figcaption>
+                    </figure>    
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/ur-h2o.png" itemprop="contentUrl" data-size="744x607">
+                          <img src="images/art/ur-h2o_thumb.png" itemprop="thumbnail" alt="UR H2O" />
+                      </a>
+                      <figcaption itemprop="caption description">UR H2O. Digital, designed for University of Rochester's Dining & Auxiliary Services.</figcaption>
+                    </figure>  
+
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                      <a href="images/art/art-as-activism.jpg" itemprop="contentUrl" data-size="612x792">
+                          <img src="images/art/art-as-activism_thumb.jpg" itemprop="thumbnail" alt="Art as Activism" />
+                      </a>
+                      <figcaption itemprop="caption description">Art as Activism. Digital.</figcaption>
+                    </figure>                                       
+
+                </div>
+
+            <p>More art: <a class="my-link" href="http://memoryfuel.tumblr.com/">Tumblr</a> | <a class="my-link" href="http://dannayy.deviantart.com/">DeviantArt</a>
+        
             <div id="shows" class="my-list">
                 <h3>Exhibitions</h3>
                 <p>Group shows all in Rochester, NY.</p>
@@ -192,13 +257,14 @@
             </div>
         </div><!--Art-->
     </section>
-    <section>
+    <section class="about-content">
         <a class="anchor" id="About"></a>
-        <div id="about-content" class="contentitem">
+        <div class="about-content contentitem">
             <h2 class="section-header">About</h2>
             <div class="about-div">
-                <div class="about-descr"><p>Danny is from the Washington, D.C. area and studies Environmental Science (with some art and computer science thrown in there...) at the University of Rochester, NY. He is interested in finding new ways to tell stories with digital media.
-                <p><a class="my-link" href="Diaz-Etchevehere_Daniel_CV_11_14_16.pdf">CV</a> | <a class="my-link" href="https://www.linkedin.com/in/daniel-diaz-etchevehere-02985b82">LinkedIn</a> | <strong>Contact</strong>: ddiazetc@u.rochester.edu</p>
+                <div class="about-descr"><p>Danny is from the Washington, D.C. area and studies Environmental Science (with some art and computer science thrown in there...) at the University of Rochester, NY. He is interested in the way narrative operates in different media forms such as graphic novels, video games, animation, new media, and the web, and how these narratives can create shared learning experiences and communicate/produce knowledge.</p>         
+
+                <p><a class="my-link" href="Diaz-Etchevehere_Daniel_CV_12_24_16.pdf">CV</a> | <a class="my-link" href="https://www.linkedin.com/in/daniel-diaz-etchevehere-02985b82">LinkedIn</a> | <strong>Contact</strong>: ddiazetc@u.rochester.edu</p>
 
                 </div>
                 <div class="about-pic"><img id="propic" src="images/propicS_h.png" alt="Danny"></div>
@@ -206,94 +272,155 @@
                     <img src="images/propicS_h.png" alt="me-h">
                 </div>
             </div>
-
-
         </div><!--About-->
     </section>
 
     <footer>
-        Website made by me<br>
+        Website made by me
     </footer>
+
 </div><!--container-->
 </div><!--cover-->
-<script>document.getElementById("mobile-nav").style.opacity = "0";</script> <!--For some reason the opacity isn't 0 immediately.-->
-<script src="js/rdm.js"></script>
 
-<script>function myFunction(){
-    var x = document.getElementById("barID");
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-    if(x.className === "bar"){
-        x.className += " responsive";
-        $('.bar').find('*').addClass('responsive');
-    } else {
-        x.className = "bar";
-        $('.bar').find('*').removeClass('responsive');
-    }
-}</script> 
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
 
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader-active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--JQuery-->
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 
-<!-- Swiper JS -->
+<script>document.getElementById("mobile-nav").style.opacity = "0";</script> <!--For some reason the opacity isn't 0 immediately.-->
+
+<!--AOS: Animate on scroll js library from http://michalsnik.github.io/aos/ -->
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+<!--Initialize AOS-->
+<script> 
+    AOS.init({
+      duration: 800,
+    });
+</script>
+
+<script src="js/open-nav.js"></script>
+
+<!--Smooth scroll-->
+<script src="js/smoothscroll.js"></script>
+
+<!-- Swiper plugin for artworks -->
 <script src="Swiper-3.4.0/dist/js/swiper.min.js"></script>
 
 <!-- Initialize Swiper -->
-<script>
-    var swiper = new Swiper('.swiper-container', {
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-//        paginationType: 'fraction',
-        loop: true,
-        zoom: true
-    });
-//    swiper.nextButton[0].style.display = "none";
-//    swiper.prevButton[0].style.display = "none";
-</script>
+<script src="js/swiper-initialize.js"></script>
 
-<!--transition: opacity doesn't work, but this changes the hamburger -> X -->
-<script>
-    $('.hamburger-class').click(function() {
-        document.getElementById("mobile-nav").style.zIndex = "21";
-         $('.overlay').toggleClass('fadeOut');
-    });
-    $('.mobile-nav-a').click(function() {
+<!-- Core JS file -->
+<script src="PhotoSwipe-master/dist/photoswipe.min.js"></script> 
 
-        $('.overlay').toggleClass('fadeOut');
-    });
-</script>
-    <!--still have the problem of if the user is in mobile mode and then resizes the window and the hamburger goes away... try using a listener
-    modernweb.com/2014/03/24/using-media-queries-in-javascript-->
+<!-- UI JS file -->
+<script src="PhotoSwipe-master/dist/photoswipe-ui-default.min.js"></script> 
 
-<!--Smooth scroll-->
-<!--<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>-->
-<script>
-    // From:    Smooth Scrolling by CHRIS COYIER, updated JANUARY 31, 2016
-    //          https://css-tricks.com/snippets/jquery/smooth-scrolling
-    $(function() {
-        $('a[href*="#"]:not([href="#"])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-                if (target.length) {
-                    $('html, body').animate({
-                        scrollTop: target.offset().top
-                    }, 250);
-                    return false;
-                }
-            }
-        });
-    });
-</script>
+<script src="js/init-photoswipe.js"></script>
 
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<!-- <script>
+var openPhotoSwipe = function() {
+    var pswpElement = document.querySelectorAll('.pswp')[0];
 
-    ga('create', 'UA-76799908-3', 'auto');
-    ga('send', 'pageview');
-</script>
+    // build items array
+    var items = [
+        {
+            src: 'images/art/laputian-robot.png',
+            w: 1280,
+            h: 876
+        },
+        {
+            src: 'https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg',
+            w: 1024,
+            h: 683
+        }
+    ];
+    
+    // define options (if needed)
+    var options = {
+             // history & focus options are disabled on CodePen        
+        history: false,
+        focus: false,
+
+        showAnimationDuration: 0,
+        hideAnimationDuration: 0
+        
+    };
+    
+    var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+    gallery.init();
+};
+
+//openPhotoSwipe();
+
+document.getElementById('btn').onclick = openPhotoSwipe;
+</script> -->
+
+
 </body>
 </html>

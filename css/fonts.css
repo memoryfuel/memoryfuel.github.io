@@ -1,51 +1,64 @@
+/*------------ Base fonts ------------*/
 p, footer{
-    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #232328;
 } 
 
-.bar{
-    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-weight: 700;
-}
-
 h1{
-    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 110%;
     margin-bottom: 2px;
+}
+
+h3{
+    font-family: 'Scada', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*------------ Nav fonts ------------*/
+
+.bar{ /*top-nav*/
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
 }
 
 .nav-a{
     color: #5a515e;
 }
 
-.me{
-    color:#000;
+.h1-name{ /*my name in nav-bar*/
+    color: black;
 }
 
-.my-list{
-    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+.overlay-content{ /* fullscreen overlay nav */
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 500;
 }
 
-.memory-fuel{
-    font-size: 300%;
+/*------------ Styling each section, including other pages------------*/
+
+.hero-header{
+    font-size: 250%;
     font-family: 'Unna', Helvetica, Arial, sans-serif;
     font-weight: 700;
-    font-color: #232328;
 }
 
 .section-header{
     font-family: 'Scada', Helvetica, Arial, sans-serif;
     font-weight: 700;
-    font-color: #232328;
 }
 
-h3{
-    font-family: 'Scada', Helvetica, Arial, sans-serif;
-    font-weight: 400;
+.my-list{
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/*******Links******/
+/*------------ Hyperlinks ------------*/
 .my-link{
     color: royalblue;
 }
@@ -54,16 +67,20 @@ a:hover{
     text-decoration: none;
 }
 
-a:visited{
-    color: royalblue;
+input[type=submit]{
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial;
 }
 
-a{
-    text-decoration: none;
+/*------------ PhotoSwipe ------------*/
+
+.pswp__top-bar{
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #eee;
+    font-weight: 500;
 }
 
-/**** overlay nav ****/
-.overlay-content {
-    font-family: 'Raleway', Helvetica Neue, Helvetica, Arial, sans-serif;
+.pswp__caption__center{
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #eee;
     font-weight: 500;
 }
