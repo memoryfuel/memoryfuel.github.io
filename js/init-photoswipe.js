@@ -148,6 +148,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             showAnimationDuration: 0,
        		hideAnimationDuration: 0,
        		showHideOpacity: true,
+            getThumbBoundsFn:false,
 
             
             getThumbBoundsFn: function(index) {
