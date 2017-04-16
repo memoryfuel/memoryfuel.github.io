@@ -2864,6 +2864,11 @@ var _getItemAt,
 		if(!item.src) {
 			return;
 		}
+		/*var new_img = document.createElement("img");
+		new_img.setAttribute('src', 'images/art/bs.png');
+		new_img.setAttribute('zIndex', 10000000);*/
+		//img = new_img;
+		//document.getElementById("About").appendChild(new_img);
 
 		if(!img) {
 			img = item.container.lastChild;

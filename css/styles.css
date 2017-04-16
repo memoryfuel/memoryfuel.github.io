@@ -213,11 +213,11 @@ img.displayed{
 }
 
 .my-gallery img{
-	margin-bottom: -4px;
+	margin-bottom: -4px;	
 }
 
 .my-gallery figure{
-	flex: 1 1 20%;
+	flex: 1 1 25%;
 	/*border-style: solid;*/
 	margin: 0;
 	padding: 0;
@@ -294,7 +294,7 @@ img.displayed{
 	}
 
 	.my-gallery figure{
-	flex: 1 1 33%;
+	flex: 1 1 25%;
 	}
 }
 
