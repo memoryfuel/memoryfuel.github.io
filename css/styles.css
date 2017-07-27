@@ -160,16 +160,20 @@ img.displayed{
 	background-color: #050409;
 }
 
-.research-content{
+/*.research-content{
 	background-color: #adbaca;
-}
+}*/
 
 #project-content, #contact-form-content, #db-read-content{
 	background-color: #d9dee4;
 }
 
-.game-dev-content{
+.interactive-content{
 	background-color: #c5d6e0;
+}
+
+.demo-reel-content{
+	background-color: #adbaca;
 }
 
 .art-content{
