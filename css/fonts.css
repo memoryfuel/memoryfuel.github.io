@@ -3,6 +3,7 @@ p, footer{
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #232328;
     font-size: 12pt; 
+    -webkit-text-size-adjust: none;
 } 
 
 h1{
