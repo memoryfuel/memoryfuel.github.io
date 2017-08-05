@@ -280,7 +280,7 @@ img.displayed{
 	.about-descr{
 		flex-grow: 1;
 		flex-basis: 100%;
-		
+
 	}
 
 	.about-pic{
@@ -301,6 +301,13 @@ img.displayed{
 	.my-gallery figure{
 	flex: 1 1 25%;
 	}
+}
+
+/*https://stackoverflow.com/questions/3226001/some-font-sizes-rendered-larger-on-safari-iphone*/
+@media screen and (max-device-width: 480px){
+  p{
+    -webkit-text-size-adjust: none;
+  }
 }
 
 @media(max-width: 390px){
