@@ -106,7 +106,8 @@ footer{
     left: 0;
     right: 0;
     top: 75px;
-    color: #eee;
+    /*color: #eee;*/
+    color: #000;
     margin: 10px auto;
     text-align: center;
 }
@@ -157,7 +158,8 @@ img.displayed{
 }
 
 .hero-content{
-	background-color: #050409;
+	/*background-color: #050409;*/
+	background-color: #d9dee4;
 }
 
 /*.research-content{
@@ -184,7 +186,7 @@ img.displayed{
 	background-color: #adbaca;
 }
 
-/*------------ Vimeo container styles from embedresponsively.com ------------*/
+/*------------ Vimeo/YouTube container styles from embedresponsively.com ------------*/
 
 .embed-container {
 	position: relative;
