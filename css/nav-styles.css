@@ -9,11 +9,10 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	background: #eee;
+	background: transparent;
 	padding: 0px 0px;
-	height: 40px;
-	/*material design box shadow from https://codepen.io/sdthornton/pen/wBZdXq*/
-	box-shadow: 0 2px 5px rgba(0,0,0,0.13), 0 2px 5px rgba(0,0,0,0.20);
+	height: 100px;
+	/*box-shadow: 0 2px 5px rgba(0,0,0,0.13), 0 2px 5px rgba(0,0,0,0.20);*/
 }
 
 a.anchor {
@@ -25,7 +24,11 @@ a.anchor {
 
 .nav-item{
 	text-align: center;
-	padding: 0px 20px;
+	padding: 15px;
+    margin: 10px;
+    font-size: 1.2rem;
+    background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+    color: #fff;
 }
 
 .menu{

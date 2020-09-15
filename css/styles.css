@@ -81,7 +81,7 @@ footer{
     display: flex;
     flex-flow: row wrap;
 	margin: 0 auto;
-	padding-top: 40px;
+	/*padding-top: 40px;*/
 	width: 100%;
 	background-color: #eee;
 
@@ -162,20 +162,12 @@ img.displayed{
 	background-color: #d9dee4;
 }
 
-/*.research-content{
-	background-color: #adbaca;
-}*/
-
 #project-content, #contact-form-content, #db-read-content{
 	background-color: #d9dee4;
 }
 
 .interactive-content{
 	background-color: #c5d6e0;
-}
-
-.demo-reel-content{
-	background-color: #adbaca;
 }
 
 .art-content{
@@ -186,7 +178,7 @@ img.displayed{
 	background-color: #adbaca;
 }
 
-/*------------ Vimeo/YouTube container styles from embedresponsively.com ------------*/
+/*------------ Vimeo/YouTube container styles ------------*/
 
 .embed-container {
 	position: relative;

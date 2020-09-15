@@ -34,8 +34,11 @@ a{
     color: #5a515e;
 }
 
-.h1-name{ /*my name in nav-bar*/
-    color: black;
+.h1-name{ 
+    background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+    color: #fff;
+    text-shadow: 2px 2px royalblue;
+    padding: 15px
 }
 
 .overlay-content{ /* fullscreen overlay nav */
@@ -60,7 +63,7 @@ a{
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/*------------ Hyperlinks ------------*/
+/*------------ links ------------*/
 .my-link{
     color: royalblue;
 }
