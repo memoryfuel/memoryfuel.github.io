@@ -9,7 +9,7 @@ p, footer{
 h1{
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: bold;
-    font-size: 110%;
+    font-size: 130%;
     margin-bottom: 2px;
 }
 
@@ -37,11 +37,9 @@ a{
 }
 
 .h1-name{ 
-    background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
     color: #fff;
     text-shadow: 2px 2px royalblue;
     padding: 15px
-    font-size: 1.3rem;
 }
 
 .overlay-content{ /* fullscreen overlay nav */
@@ -71,9 +69,7 @@ a{
 }
 
 .white-bg h2{
-    background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #000;
 }
 
 .section-header{

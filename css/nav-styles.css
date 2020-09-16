@@ -11,7 +11,7 @@
 	width: 100%;
 	background: transparent;
 	padding: 0px 0px;
-	height: 100px;
+	height: 75px;
 	/*box-shadow: 0 2px 5px rgba(0,0,0,0.13), 0 2px 5px rgba(0,0,0,0.20);*/
 }
 
@@ -27,7 +27,6 @@ a.anchor {
 	padding: 15px;
     margin: 10px;
     font-size: 1.2rem;
-    background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
     color: #fff;
 }
 
