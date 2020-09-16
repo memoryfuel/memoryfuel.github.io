@@ -34,7 +34,6 @@ h2{
 h3{
 	margin-bottom: 5px;
 	margin-top: 0px;
-	padding: 0 30px;
 }
 
 section{
@@ -49,7 +48,6 @@ section{
 p{
 	line-height: 160%;
 	margin-top: 0px;
-	padding: 0 30px;
 }
 
 img{
@@ -255,8 +253,9 @@ img.displayed{
 /*------------ Media Queries ------------ (don't include those for nav) */ 
 
 @media(max-width: 720px){
-	p, h3{
-		padding: 0 15px;
+
+	h2, h3, p{
+		padding: 0 30px;
 	}
 
 	section{
