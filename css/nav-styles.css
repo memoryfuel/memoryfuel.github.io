@@ -9,10 +9,9 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	background: transparent;
+	background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
 	padding: 0px 0px;
 	height: 75px;
-	/*box-shadow: 0 2px 5px rgba(0,0,0,0.13), 0 2px 5px rgba(0,0,0,0.20);*/
 }
 
 a.anchor {
@@ -111,14 +110,8 @@ a.anchor {
 .overlay a {
 	padding: 8px;
 	text-decoration: none;
-	font-size: 25px;
-	color: #adbaca;
 	display: block;
 	transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-	color: #f1f1f1;
 }
 
 .overlay .closebtn {
@@ -130,11 +123,11 @@ a.anchor {
 
 /*------------ Media queries ------------*/
 
-@media(max-width: 720px){
+@media(max-width: 1024px){
 
 	.bar{
 		justify-content: flex-start;
-		background: transparent;
+		background: transparent !important;
 	}
 
 	.bar .nav-item{

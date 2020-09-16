@@ -170,6 +170,10 @@ img.displayed{
 	padding: 30px 0;
 }
 
+.about-bg{
+	background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+}
+
 /*------------ Vimeo/YouTube container styles ------------*/
 
 .embed-container {
@@ -234,6 +238,9 @@ img.displayed{
 
 .about-pic img{
 	width: 100%;
+	position: relative;
+	right: 30px;
+	filter: opacity(0.7);
 }
 
 .about-descr{
@@ -252,7 +259,7 @@ img.displayed{
 
 /*------------ Media Queries ------------ (don't include those for nav) */ 
 
-@media(max-width: 720px){
+@media(max-width: 1024px){
 
 	h2, h3, p{
 		padding: 0 30px;

@@ -23,18 +23,19 @@ a{
     text-decoration: none;
 }
 
-/*------------ Nav fonts ------------*/
+/*------------ Desktop nav fonts ------------*/
 
 .bar{ /*top-nav*/
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 700;
-    background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
 }
 
 .nav-a{
     color: #fff;
     text-shadow: 2px 2px royalblue;
 }
+
+
 
 .h1-name{ 
     color: #fff;
@@ -45,6 +46,18 @@ a{
 .overlay-content{ /* fullscreen overlay nav */
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 500;
+}
+
+/*------------ Mobile nav fonts ------------*/
+.overlay a {
+    font-size: 25px;
+    background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
 }
 
 /*------------ Styling each section, including other pages------------*/
@@ -109,17 +122,27 @@ input[type=submit]{
     font-weight: 500;
 }
 
-@media(max-width: 720px){
-    p{
-        font-size: 10pt;
+@media(max-width: 1024px){
+    h1{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        right: 10px;
     }
     .h1-name{ 
-        background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);;
+        background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-shadow: none;
-        padding: 0;
-        margin: 0;
         font-size: 100%;
+        margin: 0;
+        padding: 0;
+        filter: drop-shadow(0px 0px 1px black);
+    }
+}
+
+@media(max-width: 720px){
+    p{
+        font-size: 10pt;
     }
 }
