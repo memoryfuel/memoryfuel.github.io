@@ -108,3 +108,9 @@ input[type=submit]{
     color: #eee;
     font-weight: 500;
 }
+
+@media(max-width: 720px){
+    p{
+        font-size: 10pt;
+    }
+}

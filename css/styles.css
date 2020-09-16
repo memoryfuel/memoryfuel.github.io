@@ -162,10 +162,12 @@ img.displayed{
 
 .white-bg{
 	background-color: #fff;
+	padding: 30px;
 }
 
 .black-bg{
 	background-color: #000;
+	padding: 30px;
 }
 
 /*------------ Vimeo/YouTube container styles ------------*/

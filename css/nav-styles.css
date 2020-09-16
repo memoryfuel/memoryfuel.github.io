@@ -42,9 +42,11 @@ a.anchor {
 	position: fixed;
 	top: 5px;
 	right: 15px;
-	font-size: 30px;
+	font-size: 40px;
 	cursor: pointer;
-	color: #adbaca;
+	background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #mobile-nav{
