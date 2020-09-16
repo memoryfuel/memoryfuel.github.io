@@ -134,7 +134,7 @@ a.anchor {
 
 	.bar{
 		justify-content: flex-start;
-		display: none;
+		background: transparent;
 	}
 
 	.bar .nav-item{

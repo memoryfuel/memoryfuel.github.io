@@ -113,4 +113,10 @@ input[type=submit]{
     p{
         font-size: 10pt;
     }
+    h1{
+        background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: none;
+    }
 }
