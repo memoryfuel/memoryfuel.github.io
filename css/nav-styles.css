@@ -40,8 +40,8 @@ a.anchor {
 	display: none;
 	z-index: 21;
 	position: fixed;
-	top: 0px;
-	left: 10px;
+	top: 5px;
+	right: 15px;
 	font-size: 30px;
 	cursor: pointer;
 	color: #adbaca;
@@ -132,6 +132,7 @@ a.anchor {
 
 	.bar{
 		justify-content: flex-start;
+		display: none;
 	}
 
 	.bar .nav-item{
