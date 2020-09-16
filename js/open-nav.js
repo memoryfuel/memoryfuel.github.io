@@ -6,12 +6,12 @@ function openNav() {
         document.getElementById("mobile-nav").style.opacity = "0.9";
         document.getElementById("barID").style.opacity = "0";
         hamburger.innerHTML = "&times;";
-        hamburger.style.fontSize = "50px";
-        hamburger.style.top = "-9px";
+        hamburger.style.fontSize = "60px";
+        hamburger.style.top = "-4px";
     } else {
         hamburger.innerHTML = "&#9776;";
-        hamburger.style.fontSize = "30px";
-        hamburger.style.top = "0px";
+        hamburger.style.fontSize = "40px";
+        hamburger.style.top = "5px";
         document.getElementById("barID").style.opacity = "1";
         document.getElementById("mobile-nav").style.opacity = "0";
     }

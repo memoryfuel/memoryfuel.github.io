@@ -94,7 +94,6 @@ footer{
 	flex: 0 1 100%;
 	width:100%;
     margin: 0 auto;
-	padding: 0 30px 30px 30px;
 	max-width: 960px;
 }
 
@@ -252,8 +251,15 @@ img.displayed{
 /*------------ Media Queries ------------ (don't include those for nav) */ 
 
 @media(max-width: 720px){
+	p, h3{
+		padding: 0 15px;
+	}
+
 	section{
 		width:100%;
+	}
+	.container{
+	padding-top: 0px;
 	}
 }
 
@@ -280,7 +286,7 @@ img.displayed{
 	}
 
 	.contentitem{
-		padding: 0 15px 15px 15px;;
+		padding: 0;
 	}
 
 	.my-gallery figure{
