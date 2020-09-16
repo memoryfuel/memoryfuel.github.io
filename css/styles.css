@@ -68,6 +68,7 @@ footer{
 	background-color: #606068;
 	width: 100%;
 	padding: 15px;
+	height: 0;
 }
 
 /*------------ Styling each section, including other pages------------*/
@@ -81,7 +82,7 @@ footer{
     display: flex;
     flex-flow: row wrap;
 	margin: 0 auto;
-	/*padding-top: 40px;*/
+	padding-top: 75px;
 	width: 100%;
 	background-color: #eee;
 
@@ -123,9 +124,9 @@ footer{
 	padding-bottom: 5px;
 	margin-bottom: 10px;
     margin-top: 10px;
-	border-bottom: solid;
+	/*border-bottom: solid;
 	border-color: #606068;
-	border-width: 1px;
+	border-width: 1px;*/
 }
 
 /* Styling components within each section */
@@ -160,6 +161,14 @@ img.displayed{
 .hero-content{
 	/*background-color: #050409;*/
 	background-color: #d9dee4;
+}
+
+.white-bg{
+	background-color: #fff;
+}
+
+.black-bg{
+	background-color: #000;
 }
 
 #project-content, #contact-form-content, #db-read-content{

@@ -28,10 +28,12 @@ a{
 .bar{ /*top-nav*/
     font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 700;
+    background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
 }
 
 .nav-a{
-    color: #5a515e;
+    color: #fff;
+    text-shadow: 2px 2px royalblue;
 }
 
 .h1-name{ 
@@ -39,6 +41,7 @@ a{
     color: #fff;
     text-shadow: 2px 2px royalblue;
     padding: 15px
+    font-size: 1.3rem;
 }
 
 .overlay-content{ /* fullscreen overlay nav */
@@ -52,6 +55,25 @@ a{
     font-size: 250%;
     font-family: 'Unna', Helvetica, Arial, sans-serif;
     font-weight: 700;
+    background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.black-bg h2{
+    background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.black-bg h3, .black-bg p{
+    color: #fff;
+}
+
+.white-bg h2{
+    background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .section-header{
@@ -66,6 +88,7 @@ a{
 /*------------ links ------------*/
 .my-link{
     color: royalblue;
+    text-decoration: revert;
 }
 
 a:hover{
