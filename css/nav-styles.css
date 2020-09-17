@@ -46,6 +46,7 @@ a.anchor {
 	background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0px 0px 1px black);
 }
 
 #mobile-nav{

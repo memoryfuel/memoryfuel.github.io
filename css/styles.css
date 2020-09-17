@@ -170,8 +170,15 @@ img.displayed{
 	padding: 30px 0;
 }
 
+.illus-bg{
+	background-color: #fff;
+	padding-top: 30px;
+	padding-bottom: 90px;
+}
+
 .about-bg{
 	background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+	padding: 30px 0;
 }
 
 /*------------ Vimeo/YouTube container styles ------------*/
@@ -232,14 +239,18 @@ img.displayed{
 	flex-grow: 1;
 	flex-shrink: 0;
 	flex-basis: 40%;
-	max-width: 400px;
-	padding: 15px 0px 15px 15px;
+	text-align: center;
+	/*border-radius: 100%;
+    overflow: hidden;
+    width: 300px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    height: 300px;
+    max-width: 300px;*/
 }
 
 .about-pic img{
-	width: 100%;
-	position: relative;
-	right: 30px;
+	/*width: 100%;*/
 	filter: opacity(0.7);
 }
 
@@ -250,12 +261,14 @@ img.displayed{
 
 .propicS_h{
 	display:none;
+	filter: opacity(0.7);
+	margin-bottom: 30px;
+	/*overflow: hidden;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+	border-radius: 100%;*/
 }
-
-#propic{
-	max-width: 500px;
-}
-
 
 /*------------ Media Queries ------------ (don't include those for nav) */ 
 
@@ -270,6 +283,9 @@ img.displayed{
 	}
 	.container{
 	padding-top: 0px;
+	}
+	.about-pic{
+		margin-right: 30px;
 	}
 }
 
