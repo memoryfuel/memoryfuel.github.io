@@ -115,6 +115,12 @@ footer{
 	margin: 0px;
 }
 
+.hr-div-clr{
+	width: 100%;
+	background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+	height: 2px;
+}
+
 .section-header{ /* Underlined header for each section */
 	font-size: 20pt;
 	text-align: center;
@@ -168,12 +174,14 @@ img.displayed{
 
 .white-bg{
 	background-color: #fff;
-	padding: 30px 0;
+	padding-top: 30px;
+	padding-bottom: 60px;
 }
 
 .black-bg{
 	background-color: #000;
-	padding: 30px 0;
+	padding-top: 30px;
+	padding-bottom: 60px;
 }
 
 .dreamover-bg{
@@ -188,7 +196,8 @@ img.displayed{
 
 .about-bg{
 	background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
-	padding: 30px 0;
+	padding-top: 30px;
+	padding-bottom: 60px;
 }
 
 /*------------ Vimeo/YouTube container styles ------------*/
