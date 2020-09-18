@@ -139,7 +139,7 @@ input[type=submit]{
         margin: 0;
         padding: 0;
         position: relative;
-        right: 10px;
+        right: 25px;
     }
     .h1-name{ 
         background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
@@ -156,5 +156,8 @@ input[type=submit]{
 @media(max-width: 720px){
     p{
         font-size: 10pt;
+    }
+    .about-descr p{
+        text-shadow: 1px 1px royalblue;
     }
 }

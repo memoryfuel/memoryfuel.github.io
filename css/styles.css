@@ -166,7 +166,7 @@ img.displayed{
 	background-color: #000;
 }
 
-.do-gallery{
+.gallery-container{
 	order: 1;
 	max-width: 1920px;
 	margin: 0 auto;
@@ -181,10 +181,6 @@ img.displayed{
 .black-bg{
 	background-color: #000;
 	padding-top: 30px;
-	padding-bottom: 60px;
-}
-
-.dreamover-bg{
 	padding-bottom: 60px;
 }
 
@@ -219,17 +215,17 @@ img.displayed{
 }
 
 /*------------ PhotoSwipe styles ------------*/
-.my-gallery figcaption {
-  display: none;
-
-}
 
 .my-gallery{
 	display: flex;
 	flex-flow: row wrap;
-	/*border-style: solid;*/
 	padding: 0;
 	margin: 0;
+}
+
+.my-gallery figcaption {
+  display: none;
+
 }
 
 .my-gallery img{
