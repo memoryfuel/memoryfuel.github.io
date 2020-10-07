@@ -1,0 +1,165 @@
+/*no overlay over Dreamover logo*/
+.image-overlay{
+  width: 0px;
+  height: 0px;
+}
+
+h1 {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute!important;
+  border: 0!important;
+  padding: 0!important;
+  margin: 0!important;
+  clip: rect(1px,1px,1px,1px);
+}
+
+/*h2 pagination arrows*/
+.item-pagination-title{
+  font-size: 1rem !important;
+  background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+  color: #fff !important;
+  text-shadow: 2px 2px tomato;
+  
+}
+
+/* .header-nav-list > div:first-child, .header-nav-list > div:nth-of-type(2), .header-nav-list > div:nth-of-type(3), .header-nav-list > div:nth-of-type(4), .header-nav-list > div:nth-of-type(5) {
+    display: none;
+  }*/
+
+.header-nav-list > div:first-child{
+  display: none;
+}
+
+
+.header-nav-item a{
+  color: #fff !important;
+}
+  
+.header-menu-nav-folder-content > div:first-child{
+  display: none;
+}
+
+.header-menu-nav-item {
+  line-height: 1.4em;
+   background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+}
+.header-menu-nav-item a{
+  font-size: 6vmin;
+  background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+}
+
+.header .header-nav-wrapper a{
+  background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+  padding: 6px 10px;
+  font-size: 15pt;
+  font-weight: 600;
+  text-shadow: 2px 2px tomato;
+}
+
+.sqs-block.html-block.sqs-block-html{
+  display: none;
+}
+
+svg{
+    background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+}
+
+/*rainbow color of "i" on about pg*/
+.header-nav-item.header-nav-item--collection.header-nav-item--active{
+  background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+}
+
+
+.portfolio-grid-overlay .portfolio-title{
+  color: #fff;
+}
+
+.portfolio-grid-overlay .portfolio-overlay{
+  background-color: #000;
+}
+
+/*IG logo @ pg bottom*/
+.page-section.section-height--small:not(.content-collection):not(.gallery-section){
+  min-height: unset;
+}
+
+#header{
+  position: fixed;
+}
+
+.header-announcement-bar-wrapper{
+ /* background-image: linear-gradient(rgba(0,0,0,0.75), rgba(255,0,0,0));*/
+  /*background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);*/
+  
+}
+
+
+#site-title{
+  color: #fff;
+  text-shadow: 2px 2px tomato;
+  background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+}
+
+.burger-inner{
+   background: linear-gradient(violet, aqua, pink, red);
+}
+
+.burger-inner::before, .burger-inner::after{
+  background-color: #fff;
+}
+
+.tweak-transparent-header .burger-inner::before, .tweak-transparent-header .burger-inner::after{
+  background-color: #fff;
+}
+
+.tweak-transparent-header:not(.header--menu-open) .header-announcement-bar-wrapper .burger-inner::before, .tweak-transparent-header:not(.header--menu-open) .header-announcement-bar-wrapper .burger-inner::after{
+  background-color: #fff;
+}
+
+/*:not(.has-background) .section-background{
+  background-color: #000;
+}*/
+
+.header .header-announcement-bar-wrapper {
+    padding-bottom: 1.5vw;;
+  padding-top: 1.5vw;
+}
+
+#instagram-unauth-icon{
+  fill: #fff !important;
+}
+
+.sqs-use--icon{
+fill: #50bdb8 !important;/* normal color */
+}
+
+.sqs-svg-icon--list .sqs-use--icon{
+fill: #000 !important;
+}
+
+#collection-5ee53131f25ac108a9118fb0{
+  background: linear-gradient(to right, violet, cyan, aqua, pink, yellow, salmon, red);
+}
+
+.header--menu-open .header-menu .header-menu-nav a, .header--menu-open.tweak-transparent-header .header-menu .header-menu-nav a{
+  color: white;
+  text-shadow: 2px 2px tomato;
+}
+
+.item-pagination[data-collection-type^="portfolio"] .item-pagination-icon svg, .item-pagination[data-collection-type^="portfolio"] .item-pagination-icon svg{
+  stroke: #fff;
+}
+
+/*change clr of lightbox < > & x*/
+.gallery-lightbox-control-btn, .gallery-lightbox-close-btn{
+  color: #fff;}
+
+@media screen and (max-width: 1907px) {
+    .header-title-text {
+      font-size: calc(1.5vh + 1rem);
+  }
+}
