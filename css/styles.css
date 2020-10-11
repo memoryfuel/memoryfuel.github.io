@@ -165,7 +165,7 @@ img.displayed{
     height: 1080px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: 65% 50%;
     width: 100%;
 
 }
