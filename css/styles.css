@@ -113,6 +113,7 @@ footer{
 #hero-img{
 	/*width: 960px;*/
 	margin: 0px;
+	display: none;
 }
 
 .hr-div-clr{
@@ -155,10 +156,18 @@ img.displayed{
 /* Styling the background of each section */
 
 #hero{
+    background-image: url('../images/dreamover_cover.jpg');
     margin:0 auto;
     background-color: #050409;
     max-height: 100vh;
     /*max-width: 960px;*/
+    
+    height: 1080px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
 }
 
 .hero-content{
@@ -239,6 +248,10 @@ img.displayed{
 	flex: 1 1 25%;
 	margin: 0;
 	padding: 0;
+}
+
+.pswp__caption__center{
+	text-align: center !important;
 }
 
 /*.gallery-item-container{
